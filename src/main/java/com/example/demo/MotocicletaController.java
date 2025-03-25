@@ -39,8 +39,8 @@ public class MotocicletaController {
         }
     }
     @PostMapping
-    public ResponseEntity<Motocicleta> createMotocicleta(@RequestBody Motocicleta producto) {
-        Motocicleta newMotocicleta = motocicletaService.save(producto);
+    public ResponseEntity<Motocicleta> createMotocicleta(@RequestBody Motocicleta motocicleta) {
+        Motocicleta newMotocicleta = motocicletaService.save(motocicleta);
         return new ResponseEntity<>(newMotocicleta, HttpStatus.CREATED);
     }
     @PutMapping("/{id}")
