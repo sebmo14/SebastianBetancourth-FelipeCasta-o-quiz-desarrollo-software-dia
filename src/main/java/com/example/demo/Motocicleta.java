@@ -3,14 +3,14 @@ import java.util.UUID;
 
 public class Motocicleta {
 
-    private String id, marcaMotocicleta, placaMotocicleta, colorMotocicleta;
-    private int precioMotocicleta, cilindrajeMotocicleta;
+    private String id, marcaMotocicleta, placaMotocicleta, colorMotocicleta, cilindrajeMotocicleta;
+    private int precioMotocicleta;
 
     public Motocicleta() {
         this.id = UUID.randomUUID().toString();
     }
 
-    public Motocicleta(int cilindrajeMotocicleta, String marcaMotocicleta, String placaMotocicleta, String colorMotocicleta, int precioMotocicleta) {
+    public Motocicleta(String cilindrajeMotocicleta, String marcaMotocicleta, String placaMotocicleta, String colorMotocicleta, int precioMotocicleta) {
         this.id = UUID.randomUUID().toString();;
         this.cilindrajeMotocicleta = cilindrajeMotocicleta;
         this.marcaMotocicleta = marcaMotocicleta;
@@ -59,11 +59,11 @@ public class Motocicleta {
         this.precioMotocicleta = precioMotocicleta;
     }
 
-    public int getCilindrajeMotocicleta() {
+    public String getCilindrajeMotocicleta() {
         return cilindrajeMotocicleta;
     }
 
-    public void setCilindrajeMotocicleta(int cilindrajeMotocicleta) {
+    public void setCilindrajeMotocicleta(String cilindrajeMotocicleta) {
         this.cilindrajeMotocicleta = cilindrajeMotocicleta;
     }
 }
